@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class UrlsController < ApplicationController
   def show
     token = Shortener::ShortenedUrl.extract_token(params[:id])

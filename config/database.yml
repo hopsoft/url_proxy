@@ -79,7 +79,4 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: url_proxy_production
-  username: url_proxy
-  password: <%= ENV['URL_PROXY_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
